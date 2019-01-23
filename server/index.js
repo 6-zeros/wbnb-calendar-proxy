@@ -13,10 +13,13 @@ app.use(morgan('dev'));
 
 // Image Gallery - Josh
 // app.use('/rooms/:id/photos', proxy({target: 'http://54.175.98.175'}));
+app.use('/rooms/:id/photos', proxy({target: 'http://54.201.165.207'}));
 
 // Booking - Kevin
 // app.use('/api/rooms/:id', proxy({target: 'http://54.67.99.254'}));
-app.use('/api/rooms/:id', proxy({target: 'http://localhost:8080'}));
+// app.use('/api/rooms/:id', proxy({target: 'http://localhost:8080'}));
+app.use('/api/rooms/:id', proxy({target: 'http://18.144.24.17:8080'}));
+
 
 // Recommendations - Eric
 // app.use('/house', proxy({target: 'http://18.223.185.89'}));
